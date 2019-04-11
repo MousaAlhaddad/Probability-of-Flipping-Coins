@@ -1,6 +1,6 @@
 # Probability-of-Flipping-Coins
 
-The script contains three functions: 
+The script contains four functions: 
 1. allPossibilities(coins)
    - Example: 
      - allPossibilities(3)
@@ -25,3 +25,9 @@ The script contains three functions:
       - Aim: calcuating the chance of getting 'HH' on flibbing a coin twice from a set of 2 coins each with a differet picking chance and head chance
       - Output: 0.4375
       - Explanation: the chance of picking the first coin is 0.75 with 0.25 chance of getting 'HH'for the second coin, the picking chance is 0.25 with 1 chance of getting 'HH' (result = 0.75*0.25+0.25*1 = 0.4375)
+
+4. simulatingFlippingCoins(probaility,size)
+  - Example: (simulatingFlippingCoins([0.5,0.5],(1000000,5)).sum(axis=1)==1).mean()
+  - Aim: simulating 1 million tests of five fair coin flips and obtaining the proportion of tests that produced 1 head
+  - Output: 0.15627 
+  - Alternatives: probability("HTTTT",[1],[0.5])*5 with a actaul chance of 0.15625
