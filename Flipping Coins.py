@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 def allPossibilities(coins):
     List1 = ["H","T"]
@@ -27,5 +28,6 @@ def probability(sequence,coinPickChance,headChance):
     return sum(p)
     
 
-
+def simulatingFlippingCoins(probaility,size):
+    return np.random.choice([0,1],size=size,p=probaility)
 
