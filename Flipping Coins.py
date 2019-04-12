@@ -28,6 +28,6 @@ def probability(sequence,coinPickChance,headChance):
     return sum(p)
     
 
-def simulatingFlippingCoins(probaility,size):
-    return np.random.choice([0,1],size=size,p=probaility)
+def simulatingFlippingCoins(success=[1], size=1, coins=[1,0], probaility=[0.5,0.5], tests=1000000):
+    return sum([((np.random.choice(coins,size=(tests,size),p=probaility)).sum(axis=1)==i).mean() for i in success])
 
