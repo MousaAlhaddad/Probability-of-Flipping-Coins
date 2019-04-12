@@ -27,13 +27,13 @@ The script contains four functions:
       - Explanation: the chance of picking the first coin is 0.75 with 0.25 chance of getting 'HH'for the second coin, the picking chance is 0.25 with 1 chance of getting 'HH' (result = 0.75*0.25+0.25*1 = 0.4375)
 
 4. simulatingFlippingCoins(success=[1], size=1, coins=[1,0], probaility=[0.5,0.5], tests=1000000):
-  - Example1: 
+   - Example1: 
       - simulatingFlippingCoins([2],2)
       - Aim: simulating 1 million tests of two fair coin flips and obtaining the proportion of tests that produced 2 heads
       - Output: 0.250262
       - Comparison: probabilityXcoinsYheads(2,2)[3]
       - Output of Comparsion (real probability): 0.25
-  - Example2: 
+   - Example2: 
       - simulatingFlippingCoins([1],5)
       - Aim: simulating 1 million tests of five fair coin flips and obtaining the proportion of tests that produced 1 head
       - Output: 0.156261
