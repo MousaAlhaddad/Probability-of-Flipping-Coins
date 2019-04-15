@@ -52,4 +52,7 @@ The script contains four functions:
       - Output of Comparison (real probability): 0.17980351963242186
 
 # Contributing
+The project is open for contribution
 
+# License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
