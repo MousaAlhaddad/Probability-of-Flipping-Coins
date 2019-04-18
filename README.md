@@ -4,21 +4,21 @@
 
 Right now, **Flipping Coins.py** contains the following four functions:
 
-### `allPossibilities(coins)`
-#####   Example: `allPossibilities(3)`
-     Aim: writing all the possible patterns in tossing 3 coins 
-     Output: ['HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT']
+### 1. `allPossibilities(coins)`
+#####   Example: writing all the possible patterns in tossing 3 coins
+     In: allPossibilities(3)
+     Out: ['HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT']
  
  
-### `probabilityXcoinsYheads(x,y,headChance=0.5)`
-#####   Example1: `probabilityXcoinsYheads(2,1,headChance=0.5)[3]`
-     Aim: calculating the probability of one head showing after flipping 2 fair coins 
-     Output: 0.5 
-     Explanation: ['HT','TH'] out of ['HH','HT','TH','TT] so 2 out 4 which is 0.5
-#####   Example2: `probabilityXcoinsYheads(2,1,headChance=1)[3]`
-     Aim: calculating the probability of one head showing after flipping 2 unfair coins with the head chance of 1
-     Output: 0
-     Explanation: there is a 0 chance of getting 'HT' or 'TH' because the chance of getting a head is 1
+### 2. `probabilityXcoinsYheads(x,y,headChance=0.5)`
+#####   Example 1: calculating the probability of one head showing after flipping 2 fair coins 
+     In: probabilityXcoinsYheads(2,1,headChance=0.5)[3]
+     Out: 0.5 
+Explanation: ['HT,'TH'] out of ['HH','HT','TH','TT] so 2 out 4 which is 0.5
+#####   Example 2: calculating the probability of one head showing after flipping 2 unfair coins with the head chance of 1
+     In: probabilityXcoinsYheads(2,1,headChance=1)[3]
+     Out: 0
+Explanation: there is a 0 chance of getting 'HT' or 'TH' because the chance of getting a head is 1
    
    
 ### `probability(sequence,coinPickChance,headChance)`
