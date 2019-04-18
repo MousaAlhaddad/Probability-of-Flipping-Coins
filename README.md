@@ -4,13 +4,13 @@
 
 Right now, **Flipping Coins.py** contains the following four functions:
 
-## 1. `allPossibilities(coins)`
+# 1. `allPossibilities(coins)`
 ###  Example: writing all the possible patterns in tossing 3 coins
      In: allPossibilities(3)
      Out: ['HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT']
  
  
-## 2. `probabilityXcoinsYheads(x,y,headChance=0.5)`
+# 2. `probabilityXcoinsYheads(x,y,headChance=0.5)`
 ###   Example 1: calculating the probability of one head showing after flipping 2 fair coins 
      In: probabilityXcoinsYheads(2,1,headChance=0.5)[3]
      Out: 0.5 
