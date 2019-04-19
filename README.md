@@ -5,9 +5,13 @@
 Right now, **Flipping Coins.py** contains the following four functions:
 
 ## `allPossibilities(N)`
-This function takes a single parameter *N* and returns all the possible patterns that might result from throwing coins *N* times.
+#### This function takes a single parameter **N** and returns all the possible patterns that might result from throwing coins **N** times.
 
-####  Example: writing all the possible patterns in tossing 3 coins
+####  Example 1: writing all the possible patterns in tossing one coins
+     In: allPossibilities(1)
+     Out: ['H', 'T']
+     
+####  Example 2: writing all the possible patterns in tossing three coins
      In: allPossibilities(3)
      Out: ['HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT']
  
