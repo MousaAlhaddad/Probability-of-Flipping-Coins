@@ -1,8 +1,11 @@
 # Probability of Flipping Coins
 **Flipping Coins.py** is a collection of functions that deal with **coin flipping**, or **coin tossing**, which is the practice of throwing a coin in the air and checking which side is showing when it lands. An ideal unbiased coin has a **0.5** chance for showing a head and the remaining other **0.5** chance for showing a tail with **each coin flip**. In contrast, biased coins tend to favor one side over the other. A biased coin, for example, might have a **0.8** probability of landing on its head, or its tail. 
 
+# Installation  
+    Simply, copy the codes and paste them to your workplace. 
 
-Right now, **Flipping Coins.py** contains the following four functions:
+# Documentation 
+#### Right now, **Flipping Coins.py** contains the following four functions:
 
 ## `allPossibilities(N)`
 #### This function takes a single parameter **N** and returns all the possible patterns that might result from throwing coins **N** times.
