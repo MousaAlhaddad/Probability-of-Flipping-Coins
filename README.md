@@ -4,7 +4,9 @@
 
 Right now, **Flipping Coins.py** contains the following four functions:
 
-## `allPossibilities(coins)`
+## `allPossibilities(N)`
+This function takes a single parameter *N* and returns all the possible patterns that might result from throwing coins *N* times.
+
 ####  Example: writing all the possible patterns in tossing 3 coins
      In: allPossibilities(3)
      Out: ['HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT']
@@ -30,22 +32,22 @@ Right now, **Flipping Coins.py** contains the following four functions:
 
 
 ## `simulatingFlippingCoins(success=[1], size=1, coins=[1,0], probability=[0.5,0.5], tests=1000000)`
-##### Example1: simulating 1 million tests of two fair coin flips and obtaining the proportion of tests that produced 2 heads
+##### Example 1: simulating 1 million tests of two fair coin flips and obtaining the proportion of tests that produced 2 heads
       In: simulatingFlippingCoins([2],2)
       Out: 0.250262
       Comparison probabilityXcoinsYheads(2,2)[3]
       Output of Comparsion (real probability): 0.25
-##### Example2: simulating 1 million tests of five fair coin flips and obtaining the proportion of tests that produced 1 head 
+##### Example 2: simulating 1 million tests of five fair coin flips and obtaining the proportion of tests that produced 1 head 
       In: simulatingFlippingCoins([1],5)
       Out: 0.156261
       Comparison: probability("HTTTT",[1],[0.5])*5
       Output of Comparsion (real probability): 0.15625
-##### Example3: simulating 1 million tests of ten biased coin flips and obtaining the proportion of tests that produced 5 heads 
+##### Example 3: simulating 1 million tests of ten biased coin flips and obtaining the proportion of tests that produced 5 heads 
       In: simulatingFlippingCoins(success=[5],size=5,probability=[0.8,0.2])
       Out: 0.32793
       Comparison: probabilityXcoinsYheads(5,5,0.8)[3]
       Output of Comparison (real probability): 0.32768
-##### Example4: simulating 1 million tests of ten biased coin flips and obtaining the proportion of tests that produced at least 3 heads 
+##### Example 4: simulating 1 million tests of ten biased coin flips and obtaining the proportion of tests that produced at least 3 heads 
       In: simulatingFlippingCoins(success=list(range(3,11)),size=10,probability=[0.15,0.85])
       Out: 0.179899
       Comparison: sum([probabilityXcoinsYheads(10,x,0.15)[3] for x in range(3,11)])
