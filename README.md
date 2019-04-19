@@ -7,7 +7,7 @@
 # Documentation 
 #### Right now, **Flipping Coins.py** contains the following four functions:
 
-## `allPossibilities(N)`
+## allPossibilities(N)
 #### This function takes a single parameter **N** and returns all the possible patterns that might result from throwing coins **N** times.
 
 ####  Example 1: writing all the possible patterns in tossing one coins
@@ -19,7 +19,7 @@
      Out: ['HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT']
  
  
-## `probabilityXcoinsYheads(x,y,headChance=0.5)`
+## probabilityXcoinsYheads(x,y,headChance=0.5)
 ####   Example 1: calculating the probability of one head showing after flipping 2 fair coins 
      In: probabilityXcoinsYheads(2,1,headChance=0.5)[3]
      Out: 0.5 
@@ -31,14 +31,14 @@
 ##### Explanation: there is a 0 chance of getting 'HT' or 'TH' because the chance of getting a head is 1
    
    
-## `probability(sequence,coinPickChance,headChance)`
+## probability(sequence,coinPickChance,headChance)
 #####   Example: calcuating the chance of getting 'HH' on flibbing a coin twice from a set of 2 coins each with a differet picking chance and head chance
       In: probability("HH",[0.75,0.25],[0.5,1])
       Out: 0.4375
 ##### Explanation: the chance of picking the first coin is 0.75 with 0.25 chance of getting 'HH'. For the second coin, the picking chance is 0.25 with 1 chance of getting 'HH' (result = 0.75x0.25 + 0.25x1 = 0.4375)
 
 
-## `simulatingFlippingCoins(success=[1], size=1, coins=[1,0], probability=[0.5,0.5], tests=1000000)`
+## simulatingFlippingCoins(success=[1], size=1, coins=[1,0], probability=[0.5,0.5], tests=1000000)
 ##### Example 1: simulating 1 million tests of two fair coin flips and obtaining the proportion of tests that produced 2 heads
       In: simulatingFlippingCoins([2],2)
       Out: 0.250262
