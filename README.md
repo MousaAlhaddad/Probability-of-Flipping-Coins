@@ -20,7 +20,7 @@
  
  
 ## probabilityXcoinsYheads(x,y,headChance=0.5)
-#### This function takes two main parameters **x** and **y** and returns the probbility of getting **y** heads on throwing **x** coins. 
+#### This function takes two main parameters **x** and **y** and returns the probability of getting **y** heads on throwing **x** coins. 
 
 ####   Example 1: calculating the probability of one head showing after flipping 2 fair coins 
      In: probabilityXcoinsYheads(2,1,headChance=0.5)[3]
