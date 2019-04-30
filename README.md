@@ -62,6 +62,9 @@
       Comparison: sum([probabilityXcoinsYheads(10,x,0.15)[3] for x in range(3,11)])
       Output of Comparison (real probability): 0.17980351963242186
 
+# Dependencies
+* [NumPy](https://www.numpy.org/)
+
 # Contributing
 The project is open for contribution.
 
